@@ -525,6 +525,26 @@ ul.breadcrumbs {
 	display:block;
 }
 
+.nav-pills {
+	margin-top:1em;
+}
+.nav-pills img {
+	width:60px;
+}
+.nav-pills li {
+	margin-right:15px;
+}
+.nav-pills > li > a {
+	border-radius:0;
+	border:2px solid #e9eaec;
+	padding:0;
+}
+.nav-pills > li > a:hover, .nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+	border-color:#ced0d2;
+	background:#e9eaec;
+}
+
+
 /* Pricing 
 ------------------------------------------------------------*/
 .pricing {
