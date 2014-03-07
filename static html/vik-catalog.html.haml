@@ -1,0 +1,213 @@
+!!!
+%html{:lang => "en"}
+  %head
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %title Villa Enterprises Management Storefront
+    / Bootstrap core CSS
+    %link{:href => "assets/css/bootstrap.min.css", :rel => "stylesheet"}/
+    / Custom styles for this template
+    %link{:href => "assets/css/villa-theme.css", :rel => "stylesheet"}/
+    %link{:href => "assets/css/vik.css", :rel => "stylesheet"}/
+    %link{:href => "assets/css/font-awesome.min.css", :rel => "stylesheet"}/
+    / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    /[if lt IE 9]
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  %body.vik{:role => "document"}
+    /
+      Fixed navbar
+      <div class="navbar navbar-fixed-top" role="navigation">
+    .navbar{:role => "navigation"}
+      .navbar-secondary
+        .container
+          .utilities
+            %ul.navbar-right
+              %li
+                %form.navbar-form{:role => "form"}
+                  .form-group.input-group-sm
+                    %input.form-control{:placeholder => "Search", :type => "text"}/
+              %li
+                %a{:href => "#"}
+                  %i.fa.fa-shopping-cart>
+                  Shopping Cart
+              %li.dropdown
+                %a#drop1.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  %i.fa.fa-bars>
+                  Account
+                %ul.dropdown-menu{"aria-labelledby" => "drop1", :role => "menu"}
+                  %li{:role => "presentation"}
+                    %span.username Username@villa.com
+                  %li.divider{:role => "presentation"}
+                  %li{:role => "presentation"}
+                    %a{:href => "#", :role => "menuitem", :tabindex => "-1"} My Account
+                  %li{:role => "presentation"}
+                    %a{:href => "#", :role => "menuitem", :tabindex => "-1"} Admin
+                  %li{:role => "presentation"}
+                    %a{:href => "#", :role => "menuitem", :tabindex => "-1"} Help
+                  %li{:role => "presentation"}
+                    %a{:href => "#", :role => "menuitem", :tabindex => "-1"} Log Out
+          / end utilities
+        / end container
+      / end navbar-secondary
+      .container
+        .navbar-header
+          %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.menu-toggle-label
+              Menu
+              %i.fa.fa-bars.fa-lg
+          %a.navbar-brand{:href => "index.html"} Villa Enterprises Management Storefront
+        .navbar-collapse.collapse
+          %ul.nav.navbar-nav.main-nav
+            %li.active
+              %a{:href => "vik.html"}
+                %img{:src => "assets/img/logo-vik.png"}>/
+                Villa Italian Kitchen
+            %li
+              %a{:href => "greenleafs.html"}
+                %img{:src => "assets/img/logo-greenleafs.png"}>/
+                Green Leaf&rsquo;s
+            %li
+              %a{:href => "bananas.html"}
+                %img{:src => "assets/img/logo-bananas.png"}>/
+                Bananas
+            %li
+              %a{:href => "spsf.html"}
+                %img{:src => "assets/img/logo-spsf.png"}>/
+                South Philly Steaks and Fries
+            %li
+              %a{:href => "dam.html"}
+                %img{:src => "assets/img/logo-dam.png"}>/
+                Digital Asset Management
+        / /.nav-collapse
+    .main-content{:role => "main"}
+      .sub-nav-wrapper
+        .container.sub-nav-container
+          %ul.navbar.navbar-nav.sub-nav
+            %li.active
+              %a{:href => "#"} Promotions
+            %li
+              %a{:href => "#"} Menu Boards
+            %li
+              %a{:href => "#"} POP/Store Signage
+            %li
+              %a{:href => "#"} Local Store Marketing &amp; Catering
+            %li
+              %a{:href => "#"} New Store Opening
+            %li
+              %a{:href => "#"} Miscellaneous
+      / end wrapper
+      .container
+        %ul.navbar.navbar-nav.sub-nav.sub-sub-nav
+          %li.active
+            %a{:href => "#"} Active Promotions
+          %li
+            %a{:href => "#"} Archived Promotions
+        %span.pull-right.promo-count 1-8 of 40 Promotions
+      .page-title
+        .container
+          %h1 Active Promotions
+        / end container
+      / end page-title
+      .container
+        %ul.breadcrumbs
+          %li
+            %a{:href => "index.html"} Home
+          %li
+            %i.fa.fa-angle-right
+            %a{:href => "vik.html"} Villa Italian Kitchen
+          %li
+            %i.fa.fa-angle-right
+            Active Promotions
+        .row
+          .col-md-3
+            .product-listing
+              %a{:href => "details.html"}
+                %img{:src => "assets/img/products/sample1.jpg"}/
+              %h5 Product Name
+              %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          .col-md-3
+            .product-listing
+              %a{:href => "details.html"}
+                %img{:src => "assets/img/products/sample1.jpg"}/
+              %h5 Product Name
+              %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          .col-md-3
+            .product-listing
+              %a{:href => "details.html"}
+                %img{:src => "assets/img/products/sample1.jpg"}/
+              %h5 Product Name
+              %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          .col-md-3
+            .product-listing
+              %a{:href => "details.html"}
+                %img{:src => "assets/img/products/sample1.jpg"}/
+              %h5 Product Name
+              %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        / end row
+        .row
+          .col-md-3
+            .product-listing
+              %a{:href => "details.html"}
+                %img{:src => "assets/img/products/sample1.jpg"}/
+              %h5 Product Name
+              %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          .col-md-3
+            .product-listing
+              %a{:href => "details.html"}
+                %img{:src => "assets/img/products/sample1.jpg"}/
+              %h5 Product Name
+              %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          .col-md-3
+            .product-listing
+              %a{:href => "details.html"}
+                %img{:src => "assets/img/products/sample1.jpg"}/
+              %h5 Product Name
+              %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          .col-md-3
+            .product-listing
+              %a{:href => "details.html"}
+                %img{:src => "assets/img/products/sample1.jpg"}/
+              %h5 Product Name
+              %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        / end row
+        .pagination-wrapper
+          %ul.pagination
+            %li
+              %a{:href => "#"} &laquo;
+            %li
+              %a{:href => "#"} 1
+            %li
+              %a{:href => "#"} 2
+            %li
+              %a{:href => "#"} 3
+            %li
+              %a{:href => "#"} 4
+            %li
+              %a{:href => "#"} 5
+            %li
+              %a{:href => "#"} &raquo;
+      / end container
+    / end main cotent
+    .footer
+      .container
+        %p © Villa Enterprises Management  2014
+        %p
+          %a{:href => "#"} Terms and Conditions
+          |
+          %a{:href => "#"} Privacy Policy
+        %p
+          For assistance, please email
+          %a{:href => "#"} villa@tukaiz.com
+          or call 847.288.4920
+        .footer-logo
+    / end container
+    /
+      Bootstrap core JavaScript
+      \==================================================
+    / Placed at the end of the document so the pages load faster
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"}
+    %script{:src => "assets/js/bootstrap.min.js"}
