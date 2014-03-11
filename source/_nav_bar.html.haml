@@ -40,23 +40,23 @@
       %a.navbar-brand{:href => "index.html"} Villa Enterprises Management Storefront
     .navbar-collapse.collapse
       %ul.nav.navbar-nav.main-nav
-        %li
+        %li{:class => ("active" if current_page.path == 'vik.html')}
           %a{:href => "vik.html"}
             %img{:src => "images/logo-vik.png"}>/
             Villa Italian Kitchen
-        %li
+        %li{:class => ("active" if current_page.path == 'greenleafs.html')}
           %a{:href => "greenleafs.html"}
             %img{:src => "images/logo-greenleafs.png"}>/
             Green Leaf&rsquo;s
-        %li
+        %li{:class => ("active" if current_page.path == 'bananas.html')}
           %a{:href => "bananas.html"}
             %img{:src => "images/logo-bananas.png"}>/
             Bananas
-        %li
+        %li{:class => ("active" if current_page.path == 'spsf.html')}
           %a{:href => "spsf.html"}
             %img{:src => "images/logo-spsf.png"}>/
             South Philly Steaks and Fries
-        %li
+        %li{:class => ("active" if current_page.path == 'dam.html')}
           %a{:href => "dam.html"}
             %img{:src => "images/logo-dam.png"}>/
             Digital Asset Management
