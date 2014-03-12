@@ -1,38 +1,10 @@
 .main-content{role: "main"}
-  .sub-nav-wrapper
-    .container.sub-nav-container
-      %ul.navbar.navbar-nav.sub-nav
-        %li.active
-          %a{href: "#"} Promotions
-        %li
-          %a{href: "#"} Menu Boards
-        %li
-          %a{href: "#"} POP/Store Signage
-        %li
-          %a{href: "#"} Local Store Marketing & Catering
-        %li
-          %a{href: "#"} New Store Opening
-        %li
-          %a{href: "#"} Miscellaneous
-  / end wrapper
+  = render_partial 'subnav'
   .page-title
     .container
       %h1 4 Panel Kit
-    / end container
-  / end page-title
   .container
-    %ul.breadcrumbs
-      %li
-        %a{href: "index.html"} Home
-      %li
-        %i.fa.fa-angle-right
-        %a{href: "vik.html"} Villa Italian Kitchen
-      %li
-        %i.fa.fa-angle-right
-        %a{href: "vik-catalog.html"} Active Promotions
-      %li
-        %i.fa.fa-angle-right
-        Sample Product
+    = render_partial 'breadcrumbs'
     .row.product-details
       .col-md-6
         .preview-img.tab-content
@@ -113,6 +85,3 @@
               %a{href: "#"} 4 Panel Kit Without Calories
             %li
               %a{href: "#"} 4 Panel Kit Value Meal
-    / end row
-  / end container
-/ end main cotent

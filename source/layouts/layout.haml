@@ -7,8 +7,8 @@
     %meta{:content => "on", "http-equiv" => "cleartype"}
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
     %link{:href => "stylesheets/style.css", :rel => "stylesheet"}
-
-  %body{ :class => page_classes }
+  / body should get a class indicating which restaurant is currently active 
+  %body{ :class => page_classes } 
     = render_partial 'nav_bar'
     = yield
     = render_partial 'footer'
