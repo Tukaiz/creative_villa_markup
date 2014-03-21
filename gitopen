@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+output=`git config --get remote.origin.url`
+output.sub!("git@github.com:", "http://github.com/")
+output.sub!(".git", "")
+`open #{output}`

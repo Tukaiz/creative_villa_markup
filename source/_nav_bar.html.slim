@@ -1,0 +1,61 @@
+.navbar role="navigation" 
+  .navbar-secondary
+    .container
+      .utilities
+        ul.navbar-right
+          li
+            form.navbar-form role="form" 
+              .form-group.input-group-sm
+                input.form-control placeholder="Search" type="text" /
+          li
+            a href="#" 
+              i.fa.fa-shopping-cart
+              | Shopping Cart
+          li.dropdown
+            a#drop1.dropdown-toggle data-toggle="dropdown" href="#" 
+              i.fa.fa-bars
+              | Account
+            ul.dropdown-menu aria-labelledby="drop1" role="menu" 
+              li role="presentation" 
+                span.username Username@villa.com
+              li.divider role="presentation" 
+              li role="presentation" 
+                a href="#" role="menuitem" tabindex="-1"  My Account
+              li role="presentation" 
+                a href="#" role="menuitem" tabindex="-1"  Admin
+              li role="presentation" 
+                a href="#" role="menuitem" tabindex="-1"  Help
+              li role="presentation" 
+                a href="#" role="menuitem" tabindex="-1"  Log Out
+  .container
+    .navbar-header
+      button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" type="button" 
+        span.sr-only Toggle navigation
+        span.menu-toggle-label
+          | Menu
+          i.fa.fa-bars.fa-lg
+      a.navbar-brand href="index.html"  Villa Enterprises Management Storefront
+    .navbar-collapse.collapse
+      ul.nav.navbar-nav.main-nav
+        li class=(("active" if current_page.path == 'vik.html')) 
+          a (href="vik.html")
+            img (src="images/logo-vik.png") /
+            | Villa Italian Kitchen
+        li class=(("active" if current_page.path == 'greenleafs.html')) 
+          a (href="greenleafs.html")
+            img (src="images/logo-greenleafs.png")/
+            | Green Leaf&rsquo;s
+        li class=(("active" if current_page.path == 'bananas.html')) 
+          a href="bananas.html" 
+            img (src="images/logo-bananas.png" )/
+            | Bananas
+        li class=(("active" if current_page.path == 'spsf.html')) 
+          a (href="spsf.html")
+            img (src="images/logo-spsf.png" )/
+            | South Philly Steaks and Fries
+        li class=(("active" if current_page.path == 'dam.html')) 
+          a (href="dam.html")
+            img (src="images/logo-dam.png")/
+            | Digital Asset Management
+
+

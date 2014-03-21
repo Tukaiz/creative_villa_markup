@@ -11,6 +11,14 @@
 # Page options, layouts, aliases and proxies
 ###
 
+require 'slim'
+
+# Set slim-lang output style
+Slim::Engine.set_default_options :pretty => true
+
+#  # Set template languages
+set :slim, :layout_engine => :slim
+
 # Per-page layout changes:
 #
 # With no layout
